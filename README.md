@@ -36,11 +36,11 @@ To quickly get started, follow these steps:
 
 1. Install all dependencies by running `npm i`.
 
-2. Compile the circuit using the command: `npx hardhat circom`. This will generate the `out` directory with circuit intermediaries and the `CircuitSangamVerifier.sol` contract.
+2. Compile the circuit using the command: `npx hardhat circom`. This will generate the `out` directory with circuit intermediaries and the `MultiplierVerifier.sol` contract.
 
 3. Prove and Deploy:
    - Run `npx hardhat run scripts/deploy.ts`. This script performs the following tasks:
-     - Deploys the `CircuitSangamVerifier.sol` contract.
+     - Deploys the `MultiplierVerifier.sol` contract.
      - Generates a proof from circuit intermediaries using `generateProof()`.
      - Generates calldata with `generateCallData()`.
      - Calls `verifyProof()` on the verifier contract with the calldata.
